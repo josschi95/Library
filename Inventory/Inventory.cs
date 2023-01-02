@@ -63,6 +63,7 @@ public class Inventory : MonoBehaviour
     }
 }
 
+[System.Serializable]
 public class InventorySlot
 {
     public Item item;
