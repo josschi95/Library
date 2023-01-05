@@ -46,7 +46,7 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
-    public static GameObject SpawnFromPool_Static(string tag, Vector3 position, Quaternion rotation)
+    public static GameObject Spawn(string tag, Vector3 position, Quaternion rotation)
     {
         return instance.SpawnFromPool(tag, position, rotation);
     }
@@ -94,7 +94,7 @@ public class ObjectPooler : MonoBehaviour
     }
 
     #region - Return To Pool -
-    public static void ReturnToPool_Static(string tag, GameObject go)
+    public static void Return(string tag, GameObject go)
     {
         instance.ReturnToPool(tag, go);
     }
